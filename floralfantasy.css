@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+a{
+    text-decoration: none;
+    color:#253145;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #253145;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#feaa97;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #2d333a;
+    font-size: 18px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#classesparagraph{
+    margin: 0;
+    padding-bottom: 5;
+}
+
+#companydirectory {
+    text-align: left;
+    padding-left: 15px;
+}
+
+div.indexcenterimage {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(images/indexbodypic.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+}
+
+div.aboutcenterimage {
+    width: 100%;
+    height: 600px;
+    background-image: url(images/flowerabout.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+
+div.returnscenterimage {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(images/flowerreturn.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+
+div.linkscenterimage {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(images/flowerlinks.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 1em;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0; 
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav li {
+   float: left;    
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p{
+    line-height: 1.4em;
+    float: left;
+}
+
+#returns {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tableheader p{
+    padding-bottom: 25px;
+}
+
+thead th{
+    color: #f25750;
+    border-bottom: 1px solid black;
+}
+
+.trainingclasstable {
+    width: 40%;
+    margin: auto;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #feeed6;
+}
