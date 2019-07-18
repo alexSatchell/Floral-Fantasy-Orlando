@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+/* start media section */
+@media all and (max-width: 600px) {
+    .navcontainer {
+        flex-wrap: wrap;
+    }
+
+    .navcontainer > li {
+        flex-basis: 50%;
+    }
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: .600em
+    }
+
+    table td {
+        display: block;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    table td::before {
+        float: left;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .navcontainer > li {
+        flex-basis: 100%;
+    }
+}
+/* end media section */
+
+/* a link settings */
 a{
     text-decoration: none;
     color:#253145;
@@ -14,137 +73,114 @@ a:hover{
     text-decoration: none;
     color:#feaa97;
 }
-
+/* a link settings */
 body{
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     color: #2d333a;
     font-size: 18px;
-    background-color: #fff;
-
 }
-
-#classesparagraph{
-    margin: 0;
-    padding-bottom: 5;
-}
-
-#companydirectory {
-    text-align: left;
-    padding-left: 15px;
-}
-
-div.indexcenterimage {
-    width: 100%;
-    min-height: 600px;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #fff;
-    font-size: 48px;
-}
-
-div.aboutcenterimage {
-    width: 100%;
-    height: 600px;
-    background-image: url(images/flowerabout.jpg);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-
-}
-
-div.returnscenterimage {
-    width: 100%;
-    min-height: 600px;
-    background-image: url(images/flowerreturn.jpg);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-
-}
-
-div.linkscenterimage {
-    width: 100%;
-    min-height: 600px;
-    background-image: url(images/flowerlinks.jpg);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-footer {
-    padding: 15px 0 15px 0;
-    text-align: center;
-}
-
+/* start header section */
 header {
     text-align: center;
     background-color: #fff;
     padding: 1em;
 }
+/* end header section */
 
-li {
-    text-decoration: none;
-    list-style: none;
-}
-
-nav {
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0; 
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav li {
-   float: left;    
-}
-
-nav a {
-    display: block;
-    text-decoration: none;
-    padding: 25px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-p{
-    line-height: 1.4em;
-    float: left;
-}
-
-#returns {
-    text-align: left;
-    padding-left: 15px;
-}
-
-table{
-    text-align: center;
-}
-
-.tableheader p{
-    padding-bottom: 25px;
-}
-
-thead th{
-    color: #f25750;
-    border-bottom: 1px solid black;
-}
-
-.trainingclasstable {
+/* nav bar section */
+.navcontainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    background-color: #fff;
 }
+
+.navcontainer li {
+    flex: 1;
+}
+
+nav ul li{
+    list-style-type: none;
+    text-align: center;
+    margin: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+/* nav bar section */
+p{
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.4em;
+}
+/* start banner image section  */
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* .banner-text {
+    position: absolute;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: -3px -4px 5px rgba(150, 150, 150, 1);
+
+} */
+/* end banner img section */
+
+/* begin table section */
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    padding: .35em;
+}
+
+table th, td {
+    padding: .600em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.classoffering {
+    text-align: center;
+}
+/* end table section */
 
 .wrapper {
-    width: 80%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width:80%;
     margin: 0 auto;
     background-color: #feeed6;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
 }
