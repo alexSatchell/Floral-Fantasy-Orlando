@@ -20,7 +20,7 @@ body{
     color: #2d333a;
     font-size: 18px;
     background-color: #fff;
-    text-align: center;
+
 }
 
 #classesparagraph{
@@ -36,7 +36,6 @@ body{
 div.indexcenterimage {
     width: 100%;
     min-height: 600px;
-    background-image: url(images/indexbodypic.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -124,6 +123,10 @@ p{
     padding-left: 15px;
 }
 
+table{
+    text-align: center;
+}
+
 .tableheader p{
     padding-bottom: 25px;
 }
@@ -134,8 +137,10 @@ thead th{
 }
 
 .trainingclasstable {
-    width: 40%;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .wrapper {
