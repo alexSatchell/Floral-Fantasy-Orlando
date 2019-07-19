@@ -27,7 +27,7 @@ body{
     padding-bottom: 5;
 }
 
-#companydirectory {
+.companydirectory {
     text-align: left;
     padding-left: 15px;
 }

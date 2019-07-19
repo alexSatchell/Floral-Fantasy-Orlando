@@ -1,127 +1,127 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 * {
-    margin: 0; 
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* start media section */
 @media all and (max-width: 600px) {
-    .navcontainer {
-        flex-wrap: wrap;
-    }
+  .navcontainer {
+    flex-wrap: wrap;
+  }
 
-    .navcontainer > li {
-        flex-basis: 50%;
-    }
+  .navcontainer > li {
+    flex-basis: 50%;
+  }
 
-    table {
-        border: 0;
-    }
+  table {
+    border: 0;
+  }
 
-    table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
-    table tr {
-        display: block;
-        margin-bottom: .600em
-    }
+  table tr {
+    display: block;
+    margin-bottom: 0.6em;
+  }
 
-    table td {
-        display: block;
-        font-size: .8em;
-        text-align: left;
-    }
+  table td {
+    display: block;
+    font-size: 0.8em;
+    text-align: left;
+  }
 
-    table td::before {
-        float: left;
-    }
+  table td::before {
+    float: left;
+  }
 
-    table td:last-child {
-        border-bottom: 0;
-    }
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
 
 @media all and (max-width: 400px) {
-
-    .navcontainer > li {
-        flex-basis: 100%;
-    }
+  .navcontainer > li {
+    flex-basis: 100%;
+  }
 }
 /* end media section */
 
 /* a link settings */
-a{
-    text-decoration: none;
-    color:#253145;
+a {
+  text-decoration: none;
+  color: #253145;
 }
 
-a:visited{
-    text-decoration: none;
-    color: #253145;
+a:visited {
+  text-decoration: none;
+  color: #253145;
 }
 
-a:hover{
-    text-decoration: none;
-    color:#feaa97;
+a:hover {
+  text-decoration: none;
+  color: #feaa97;
 }
 /* a link settings */
-body{
-    min-height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    color: #2d333a;
-    font-size: 18px;
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  color: #2d333a;
+  font-size: 18px;
 }
 /* start header section */
 header {
-    text-align: center;
-    background-color: #fff;
-    padding: 1em;
+  text-align: center;
+  background-color: #fff;
+  padding: 1em;
 }
 /* end header section */
 
 /* nav bar section */
 .navcontainer {
-    display: flex;
-    background-color: #fff;
+  display: flex;
+  background-color: #fff;
 }
 
 .navcontainer li {
-    flex: 1;
+  flex: 1;
 }
 
-nav ul li{
-    list-style-type: none;
-    text-align: center;
-    margin: 15px;
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+  margin: 15px;
 }
 
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
 }
 /* nav bar section */
-p{
-    margin: 15px;
-    padding: 5px;
-    line-height: 1.4em;
+p {
+  margin: 15px;
+  padding: 5px;
+  line-height: 1.4em;
 }
 /* start banner image section  */
 section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 section img {
-    flex-flow: row nowrap;
-    align-items: center;
+  flex-flow: row nowrap;
+  align-items: center;
+    flex-basis: auto;
 }
 
 /* .banner-text {
@@ -136,51 +136,96 @@ section img {
 
 /* begin table section */
 table {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
 }
 
 table tr {
-    padding: .35em;
+  padding: 0.35em;
 }
 
-table th, td {
-    padding: .600em;
-    text-align: center;
+table th,
+td {
+  padding: 0.6em;
+  text-align: center;
 }
 
 table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .classoffering {
-    text-align: center;
+  text-align: center;
 }
 /* end table section */
 
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width:80%;
-    margin: 0 auto;
-    background-color: #feeed6;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #feeed6;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-header, main, footer {
-    flex-shrink: 0;
+header,
+main,
+footer {
+  flex-shrink: 0;
 }
 
 footer {
-    margin-top: auto;
-    text-align: center;
+  margin-top: auto;
+  text-align: center;
+}
+
+.companydirectory {
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.4em;
+}
+
+.companydirectory h3 {
+    text-decoration: underline;
+}
+
+.companydirectory dd {
+    padding-left: 30px;
+}
+
+.returns {
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.4em;
+}
+
+.returns h3 {
+    text-decoration: underline;   
+}
+
+.returns dd {
+    padding-left: 30px;
+}
+
+.partnerlinks {
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.4em;
+}
+
+.partnerlinks h3 {
+    text-decoration: underline;
+}
+
+.partnerlinks ul li {
+    list-style: none;
 }
