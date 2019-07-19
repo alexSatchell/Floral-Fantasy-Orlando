@@ -5,7 +5,54 @@
   padding: 0;
 }
 
-/* start media section */
+body {
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    color: #2d333a;
+    font-size: 18px;
+  }
+
+  header {
+    text-align: center;
+    background-color: #fff;
+    padding: 1em;
+  }
+
+  p {
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.4em;
+  }
+  
+main {
+    flex-grow: 1;
+  }
+  
+  header,
+  main,
+  footer {
+    flex-shrink: 0;
+  }
+  
+  footer {
+    margin-top: auto;
+    text-align: center;
+    background: #fff;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #feeed6;
+  }
+
+/***********************
+Start media section
+***********************/
 @media all and (max-width: 600px) {
   .navcontainer {
     flex-wrap: wrap;
@@ -55,9 +102,13 @@
     flex-basis: 100%;
   }
 }
-/* end media section */
+/***********************
+End media section
+***********************/
 
-/* a link settings */
+/***********************
+Start a link section
+***********************/
 a {
   text-decoration: none;
   color: #253145;
@@ -72,47 +123,38 @@ a:hover {
   text-decoration: none;
   color: #feaa97;
 }
-/* a link settings */
-body {
-  min-height: 100vh;
-  font-family: "Raleway", sans-serif;
-  color: #2d333a;
-  font-size: 18px;
-}
-/* start header section */
-header {
-  text-align: center;
-  background-color: #fff;
-  padding: 1em;
-}
-/* end header section */
+/***********************
+End a link section
+***********************/
 
-/* nav bar section */
+/***********************
+Start nav section
+***********************/
 .navcontainer {
-  display: flex;
-  background-color: #fff;
-}
+    display: flex;
+    background-color: #fff;
+  }
+  
+  .navcontainer li {
+    flex: 1;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+  }
+/***********************
+End nav section
+***********************/
 
-.navcontainer li {
-  flex: 1;
-}
-
-nav ul li {
-  list-style-type: none;
-  text-align: center;
-  margin: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-/* nav bar section */
-p {
-  margin: 15px;
-  padding: 5px;
-  line-height: 1.4em;
-}
-/* start banner image section  */
+/***********************
+Start banner img section
+***********************/
 section {
   display: flex;
   justify-content: center;
@@ -132,9 +174,13 @@ section img {
     text-shadow: -3px -4px 5px rgba(150, 150, 150, 1);
 
 } */
-/* end banner img section */
+/***********************
+End banner img section
+***********************/
 
-/* begin table section */
+/***********************
+Start table section (index)
+***********************/
 table {
   margin: 0;
   padding: 0;
@@ -161,47 +207,45 @@ table th {
 .classoffering {
   text-align: center;
 }
-/* end table section */
+/***********************
+End table section (index)
+***********************/
 
-.wrapper {
-  min-height: 100%;
+/***********************
+Start about page
+***********************/
+.companydirectory {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #feeed6;
-}
-
-main {
-  flex-grow: 1;
-}
-
-header,
-main,
-footer {
-  flex-shrink: 0;
-}
-
-footer {
-  margin-top: auto;
-  text-align: center;
-}
-
-.companydirectory {
   margin: 15px;
   padding: 5px;
   line-height: 1.4em;
+  justify-content: center;
+
 }
 
 .companydirectory h3 {
   text-decoration: underline;
+  flex: 1;
 }
 
 .companydirectory dd {
   padding-left: 30px;
+  flex: 1;
 }
 
+video {
+    flex: 2;
+    align-self: center;
+    padding: 15px;
+}
+/***********************
+End about page
+***********************/
+
+/***********************
+Start returns page
+***********************/
 .returns {
   margin: 15px;
   padding: 5px;
@@ -215,7 +259,13 @@ footer {
 .returns dd {
   padding-left: 30px;
 }
+/***********************
+End returns page
+***********************/
 
+/***********************
+Start links page
+***********************/
 .partnerlinks {
   margin: 15px;
   padding: 5px;
@@ -229,7 +279,13 @@ footer {
 .partnerlinks ul li {
   list-style: none;
 }
-/* form contact */
+/***********************
+End links page
+***********************/
+
+/***********************
+Start contact form 
+***********************/
 select, option, input, label, button {
     padding: 0.2rem 1rem;
     font-size: 1.2rem;
@@ -255,3 +311,6 @@ form {
 .form-box button {
 
 }
+/***********************
+End contact form 
+***********************/
