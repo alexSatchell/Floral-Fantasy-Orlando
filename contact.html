@@ -29,11 +29,30 @@
             </ul>
         </nav>
         <section>
-            <img src="images/flowers/indexbodypic.jpg" alt="flowers outside of store front">
+            <img src="images/flowers/contact.jpg" alt="flowers outside of store front">
             <!-- <div class="banner-text">Locally Grown Flowers</div> -->
         </section>
         <main>
-
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="mailing-list">Would you like to join
+                    our mailing list?
+                </label>
+                <input type="radio" name="mailing-list" name="yes">yes
+                <input type="radio" name="mailing-list" name="no">no
+                    <select name="" id="">
+                        <option value="age-group" selected>Select your age group</option>
+                        <option value="age-group">Under 18</option>
+                        <option value="age-group">18 - 25</option>
+                        <option value="age-group">25 - 35</option>
+                        <option value="age-group">35 - 50</option>
+                        <option value="age-group">Over 50</option>
+                    </select>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </form>
         </main>
         <footer id="footercopyright">
             <small>copright &COPY; 2019 Floral Fantasy, All rights reserved.</small>
@@ -42,3 +61,19 @@
 </body>
 
 </html>
+
+<!-- requirements
+    Add a comment form to the site.  The form must include the following:
+
+    fields for name and e-mail address
+    radio buttons to allow them the choice of receiving/not receiving your newsletter
+    check boxes to choose items of interest
+    a select menu to choose their age group
+    a comments box
+
+
+The form will be processed using the provided PHP script (or one of 
+your own of you wish) which you will need to put on your student site. 
+ Please use the form processing instructions provided with last week's 
+ material.
+ -->
