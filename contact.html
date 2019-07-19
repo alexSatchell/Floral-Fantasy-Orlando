@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Alex Satchell">
-    <meta name="description" content="Floral Fantasy Home Page">
-    <meta name="keywords" content="Classes, Arrangement, Florida, Flowers">
+    <meta name="description" content="Questions, comments, or concerns? reach out to us via the form attached.">
+    <meta name="keywords" content="questions, contact, email, sign-up">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="floralfantasy.css">
     <title>Contact - Floral Fantasy</title>
@@ -29,29 +29,46 @@
             </ul>
         </nav>
         <section>
-            <img src="images/flowers/contact.jpg" alt="flowers outside of store front">
+            <img src="images/flowers/contact.jpg" alt="Flowers along bedside">
             <!-- <div class="banner-text">Locally Grown Flowers</div> -->
         </section>
         <main>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="mailing-list">Would you like to join
-                    our mailing list?
-                </label>
-                <input type="radio" name="mailing-list" name="yes">yes
-                <input type="radio" name="mailing-list" name="no">no
-                    <select name="" id="">
-                        <option value="age-group" selected>Select your age group</option>
-                        <option value="age-group">Under 18</option>
-                        <option value="age-group">18 - 25</option>
-                        <option value="age-group">25 - 35</option>
-                        <option value="age-group">35 - 50</option>
-                        <option value="age-group">Over 50</option>
-                    </select>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <form name="comment-form" action="#" method="GET">
+                    <div class="form-box">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="First and Last name" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="yes-no-radio" id="form-row-mailing">Would you like to join
+                                our mailing list?</label>
+                                <p>
+                                    <input type="radio" name="mailing-list" name="yes"> yes
+                                </p>
+                                <p>
+                                    <input type="radio" name="mailing-list" name="no"> no 
+                                </p>
+                    </div>
+                    <div class="form-box">
+                        <Label for="age-selection">Please select your age group:</Label>
+                        <select name="age-selection" id="age-selection">
+                            <option value="age-group" selected>Select your age group</option>
+                            <option value="age-group">Under 18</option>
+                            <option value="age-group">18 - 25</option>
+                            <option value="age-group">25 - 35</option>
+                            <option value="age-group">35 - 50</option>
+                            <option value="age-group">Over 50</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Leave us a message..."></textarea>
+                    </div class="form-box">
+                        <button type="button">Submit</button>
+                    </div>
             </form>
         </main>
         <footer id="footercopyright">
