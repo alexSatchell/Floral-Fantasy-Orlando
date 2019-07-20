@@ -286,7 +286,7 @@ End links page
 /***********************
 Start contact form 
 ***********************/
-select, option, input, label, button {
+select, option, input, label, button{
     padding: 0.2rem 1rem;
     font-size: 1.2rem;
     color: inherit;
@@ -303,14 +303,12 @@ form {
 }
 
 .form-box input,
-.form-box select
-.form-box textarea {
+.form-box select,
+.form-box textarea,
+.form-box checkbox{
     flex-basis: 100%;
 }
 
-.form-box button {
-
-}
 /***********************
 End contact form 
 ***********************/
