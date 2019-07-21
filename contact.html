@@ -10,7 +10,7 @@
     <meta name="keywords" content="questions, contact, email, sign-up">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="floralfantasy.css">
-    <script type="text/javascript" src="script-form-validation.js"></script>
+    <script src="script-form-validation.js"></script>
     <title>Contact - Floral Fantasy</title>
 </head>
 
@@ -45,13 +45,12 @@
                         <input type="email" name="email" id="email" required>
                     </div>
                     <div class="form-box">
-                        <label for="yes-no-radio" id="form-row-mailing">Would you like to join
-                                our mailing list?</label>
+                        <p>Would you like to join our mailing list?</p>
                                 <p>
-                                    <input type="radio" name="mailing-list" name="yes"> yes
+                                    <input type="radio" name="mailing-list" id="yes"> yes
                                 </p>
                                 <p>
-                                    <input type="radio" name="mailing-list" name="no"> no 
+                                    <input type="radio" name="mailing-list" id="no"> no 
                                 </p>
                     </div>
                     <div class="form-box-checkbox">
@@ -82,7 +81,8 @@
                     <div class="form-box">
                         <label for="comments">Comments</label>
                         <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Leave us a message..."></textarea>
-                    </div class="form-box">
+                    </div>
+                    <div>
                         <button type="submit">Submit</button>
                     </div>
                     <input type="hidden" id="redirect" name="redirect" value="form-confirmation-page.html">
