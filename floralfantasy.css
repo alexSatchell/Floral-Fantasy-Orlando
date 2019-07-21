@@ -33,12 +33,15 @@ main {
   footer {
     flex-shrink: 0;
   }
+
+  
   
   footer {
     margin-top: auto;
     text-align: center;
     background: #fff;
   }
+  
 
   .wrapper {
     min-height: 100%;
@@ -164,6 +167,9 @@ section img {
   flex-flow: row nowrap;
   align-items: center;
   flex-basis: auto;
+  /* Had to add in order to have cross browser support */
+  height: 100%;
+  width: 100%;
 }
 
 /* .banner-text {
